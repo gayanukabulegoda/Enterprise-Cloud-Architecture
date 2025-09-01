@@ -1,0 +1,18 @@
+# Maven
+**/target/
+.mvn/
+
+# Node
+frontend-app/node_modules/
+frontend-app/dist/
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store
+
+# Media data
+media-service/data/
+data/
