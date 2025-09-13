@@ -36,6 +36,8 @@ An introductory multi-cloud deployment blueprint and configs:
 
 ## 🔗 IMPORTANT NOTES & QUICK REFERENCES
 
+* **Course Backend Service - GCP DB instance record (Google Drive)**: https://drive.google.com/file/d/1t520yyzWENruravxTnmX4SrFivCHmmxK/view?usp=sharing
+
 * Full, **structured notes** on Enterprise Cloud Architecture (concepts, step-by-step guidance, diagrams):
   **Notion:**
   [https://alive-lumber-714.notion.site/Enterprise-Cloud-Architecture-2369212713998038bd50ea842d2e577b?pvs=74](https://alive-lumber-714.notion.site/Enterprise-Cloud-Architecture-2369212713998038bd50ea842d2e577b?pvs=74)
