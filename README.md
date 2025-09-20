@@ -1,5 +1,13 @@
 # 🚀 Enterprise Cloud Architecture - Practical Microservices & Multi-Cloud Patterns
 
+<p align="left">
+  <strong>👤 Gayanuka Bulegoda</strong><br>
+  🎓 Student ID: <code>2301682023</code><br>
+  📧 Email: <a href="mailto:gayanukariviru@gmail.com">gayanukariviru@gmail.com</a>
+</p>
+
+---
+
 > **Enterprise-Cloud-Architecture** - A hands-on, practical collection showing how to containerize, build, and deploy microservices across local Docker and cloud environments (AWS & GCP).
 > Focus: Spring Boot backends, React frontend, MySQL & MongoDB, and media storage patterns (local → S3/GCS).
 
@@ -13,7 +21,7 @@
 
 This repo contains two main, ready-to-play-with project suites:
 
-### 1) `docker-intro-app` — Docker containerization hands-on
+### 1) `docker-intro-app` - Docker containerization hands-on
 
 A practical, full-stack demo showing how to containerize a microservice system for local development:
 
@@ -22,7 +30,7 @@ A practical, full-stack demo showing how to containerize a microservice system f
 * `docker-compose.yml` to orchestrate services for local development and tests.
 * Updated backend configs to connect to containerized DBs.
 
-### 2) `cloud-enabled-deployment-in-action-with-aws` — Cloud deployment patterns
+### 2) `cloud-enabled-deployment-in-action-with-aws` - Cloud deployment patterns
 
 An introductory multi-cloud deployment blueprint and configs:
 
@@ -53,7 +61,7 @@ An introductory multi-cloud deployment blueprint and configs:
 
 ---
 
-## 📁 Repo Structure (High Level)
+## 📁 Repo Structure
 
 ```
 Enterprise-Cloud-Architecture/
@@ -75,7 +83,7 @@ Enterprise-Cloud-Architecture/
 
 ---
 
-## ⚡ Quickstart — Run Locally with Docker Compose
+## ⚡ Quickstart - Run Locally with Docker Compose
 
 **Prerequisites**: Docker & Docker Compose installed. (Java, Node optional for building locally)
 
@@ -100,9 +108,9 @@ docker compose down --volumes
 
 ---
 
-## ☁️ Cloud Deployment Guidance (High-Level)
+## ☁️ Cloud Deployment Guidance
 
-### AWS (recommended quick routes)
+### AWS (quick routes)
 
 * **Databases**: Use **RDS (MySQL)** for `course-service`. For MongoDB, consider **DocumentDB**, **MongoDB Atlas**, or self-managed on EKS.
 * **Storage**: Use **S3** for `media-service`. Use IAM roles with least privilege + pre-signed URLs for client uploads.
@@ -115,27 +123,6 @@ docker compose down --volumes
 
 * **Cloud SQL** for MySQL, **GCS** for object storage, **Cloud Run** (serverless) or **GKE** for containers.
 * Use **Secret Manager**, **Artifact Registry**, and **Cloud Build** or GitHub Actions for CI.
-
----
-
-## 🛠 Recommended CI/CD & Infra Stack
-
-* **CI**: GitHub Actions to build Java and React artifacts, build Docker images, run tests, and push images.
-* **CD**: GitHub Actions + Terraform or CloudFormation. Use ECR/GCR, ECS/Cloud Run/EKS/GKE.
-* **IaC**: Terraform modules for VPC, DB, IAM, and compute resources.
-* **Observability**: CloudWatch / Stackdriver + Prometheus / Grafana / X-Ray / Jaeger.
-
----
-
-## ✅ Migration & Production Checklist
-
-* Externalize configuration to env vars and secrets manager.
-* Replace local file storage with S3/GCS (media-service).
-* Migrate local DB to managed DB (RDS / Cloud SQL) with backups & multi-AZ.
-* Add liveness/readiness checks (for K8s).
-* Add centralized logs, monitoring & tracing.
-* Harden networking (VPCs, private subnets, security groups).
-* Automate infra with IaC and GitOps (ArgoCD).
 
 ---
 
@@ -157,16 +144,6 @@ flowchart LR
   StudentService --> Observability
   MediaService --> Observability
 ```
-
----
-
-## 📦 What’s Next / Roadmap
-
-* Add Terraform modules for AWS & GCP (RDS/Cloud SQL, VPC, ECR/GCR, ECS/EKS/GKE).
-* Provide sample GitHub Actions workflows (CI + CD).
-* Add Helm charts for Kubernetes deployments.
-* Add production-grade observability & security examples (Prometheus + Grafana, ELK).
-* Automate an end-to-end demo that provisions minimal infra, deploys services, and tears down.
 
 ---
 
